@@ -4,6 +4,7 @@
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
+#include "summator.h"
 
 #include "example_class.h"
 
@@ -14,7 +15,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}
-	GDREGISTER_CLASS(ExampleClass);
+	GDREGISTER_CLASS(Summator);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {
